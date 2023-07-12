@@ -1,0 +1,40 @@
+
+* {
+    outline:none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+  }
+  sub { 
+    top: 0.4em; 
+  }
+
+html, body { 
+    margin:0;
+    padding:0;
+}
+*, ::after, ::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+body {
+    position:relative;
+    
+}
+.inner{
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+

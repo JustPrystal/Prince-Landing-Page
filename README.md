@@ -1,1 +1,1 @@
-# Prince Landing Page
+# Stature_Victor_WordpressTemplate

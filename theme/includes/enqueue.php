@@ -11,6 +11,24 @@
 				"version" => '4.7.0_defer'
 			],
 			[
+				"name" => 'fullpage.min.css', 
+				"type" => 'css',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css',
+				"version" => '2.9.7'
+			],
+			[
+				"name" => 'slick-theme.css', 
+				"type" => 'css',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css',
+				"version" => '1.8.1'
+			],
+			[
+				"name" => 'slick.css', 
+				"type" => 'css',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css',
+				"version" => '1.8.1'
+			],
+			[
 				"name" => 'style.css', 
 				"type" => 'css',
 				"path" => $templatedir . '/style.css',
@@ -39,11 +57,32 @@
 				"loadInFooter" => true
 			],
 			[
+				"name" => 'slick.min.js', 
+				"type" => 'js',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js',
+				"version" => '1.8.1',
+				"loadInFooter" => true
+			],
+			[
+				"name" => 'fullpage.min.js', 
+				"type" => 'js',
+				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js',
+				"version" => '2.9.7',
+				"loadInFooter" => true
+			],
+			[
 				"name" => 'gsap.js', 
 				"type" => 'js',
 				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js',
 				"version" => '1.0.0',
 				"loadInFooter" => false
+			],
+			[
+				"name" => 'custom.js', 
+				"type" => 'js',
+				"path" => $templatedir . '/js/custom.js',
+				"version" => '1.0.0',
+				"loadInFooter" => true
 			]
 		];
 		

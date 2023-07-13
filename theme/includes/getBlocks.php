@@ -23,6 +23,9 @@
             case 'hero':
               include 'blocks/hero.php';
               break;
+            case 'returns':
+              include 'blocks/returns.php';
+              break;
             
           }
         }

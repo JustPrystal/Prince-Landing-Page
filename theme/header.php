@@ -43,3 +43,4 @@
   ?>">
 
   <div class="all">
+  <?php require_once (get_template_directory() . "/navigation.php"); ?>

@@ -1,0 +1,223 @@
+.returns{
+    .inner{
+        position: relative;
+        .modal{
+            display: none;
+            position: absolute;
+            inset: 0;
+            border-radius: 40px;
+            background: rgb(233, 233, 233);
+            backdrop-filter: blur(3px);
+            z-index: 5;
+            .arrow{
+                position: absolute;
+                z-index: 6;
+                top: 50%;
+                transform: translateY(-50%);
+                &.prev{
+                    left: 35px;
+                }
+                &.next{
+                    right: 35px;
+                    left: auto;
+                }
+            }
+            .tabs{
+                position: absolute;
+                inset: 30px;
+                background-color: white;
+                border-radius: 20px;
+                .slick-list, .slick-track{
+                    border-radius: 20px;
+                    overflow: hidden;
+                    height: 100%;
+                }
+                .slick-dots{
+                    transform: translateY(50%);
+                    li{
+                        button{
+                            &::before{
+                                transition: 100ms ease-in-out;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .tab-item{
+                    width: 100%;
+                    // object-fit: cover;
+                }
+            }
+            .close-modal{
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                transform: translateX(-50%) translateY(50%);
+                top: 0;
+                right: 0;
+                z-index: 10;
+                cursor: pointer;
+                transition: 50ms;
+                &:hover{
+                    transition: 50ms;
+                    scale: 1.05;
+                }
+                &:active{
+                    transition: 50ms;
+                    scale: 0.99;
+                }
+            }
+        }
+        .wrap{
+            display: flex;
+            .content{
+                padding: 60px;
+                width: 63%;
+                .heading{
+                    font-family: "Lato";
+                    font-size: 52px;
+                    font-style: normal;
+                    font-weight: 900;
+                    margin-bottom: 20px;
+                    line-height: normal;
+                    color: black;
+                    letter-spacing: 1.04px;
+                    text-transform: uppercase;
+                    span{
+                        background: $grad;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                    }
+                }
+                .stat{
+                    grid-gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .progress{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        .percentage{
+                            font-family: "Inter";
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            top: 50%;
+                            font-size: 14px;
+                            font-weight: 900;
+                        }
+                        svg{
+                            stroke-dasharray:450;
+                            stroke-dashoffset:450;
+                            &.animate{
+                                animation: secondStat 2s ease-in-out forwards;
+                            }
+                        }
+                    }
+                    .text{
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 1.4px;
+                        text-transform: uppercase;
+                        padding-right: 20px;
+                    }
+                }
+                .description{
+                    font-family: "Inter";
+                    color: rgba(0, 0, 0, 0.7);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                    letter-spacing: 0.2px;
+                    padding-right: 80px;
+                }
+                .tab-titles{
+                    display: flex;
+                    grid-gap: 10px;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .tab-title{
+                        background: $grad;
+                        cursor: pointer;
+                        border-radius: 40px;
+                        position: relative;
+                        .background{
+                            position: absolute;
+                            transition: 50ms ease-in-out;
+                            inset: 2px;
+                            border-radius: inherit;
+                            background-color: rgba($color: white, $alpha: 0.9);
+                            z-index: 1;
+                        }
+                        .text{
+                            padding: 20px 40px;
+                            z-index: 2;
+                            color: $blue;
+                            position: relative;
+                            width: max-content;
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 1.4px;
+                            text-transform: uppercase;
+                        }
+                        transition: 50ms ease-in-out;
+                        &:hover{
+                            transition: 50ms ease-in-out;
+                            .background{
+                                transition: 50ms ease-in-out;
+                                background-color: rgba($color: white, $alpha: 0.8);
+                            }
+                        }
+                    }
+                }
+                .sub-heading{
+                    font-family: "Inter";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 40px;
+                }
+                .button{
+                    padding: 15px 30px;
+                    color: white;
+                    font-family: "Inter";
+                    width: max-content;
+                    font-size: 16px;
+                    font-style: normal;
+                    line-height: 1.375;
+                    letter-spacing: 0.32px;
+                    text-transform: uppercase;
+                    border-radius: 50px;
+                    background-image: linear-gradient(183deg, #4841D2 0%, #0E74F9 100%);
+                    transition: 100ms ease-in-out;
+                    background-size: 300%;
+                    background-position: left;
+                    &:hover{
+                        background-position:right;
+                        transition: 100ms ease-in-out;
+                    }
+                }
+            }
+            .model{
+                display: flex;
+                align-items: center;
+                video{
+                    width: calc(100% - 60px);
+                    border-radius: 40px;
+                }
+            }
+        }
+    }
+}

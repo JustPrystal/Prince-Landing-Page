@@ -75,6 +75,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_64af018616a93": {
+                    "key": "layout_64af018616a93",
+                    "name": "returns",
+                    "label": "Returns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64af018e16a94",
+                            "label": "fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64aeffad65715"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -110,5 +141,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1689107887
+    "modified": 1689190813
 }

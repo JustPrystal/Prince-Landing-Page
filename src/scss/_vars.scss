@@ -14,3 +14,20 @@ $custom-breakpoints: (
 $purple: #4841D2;
 $blue: #0E74F9;
 $grad: linear-gradient(to top, $blue, $purple); 
+
+@keyframes firstStat{
+    0%{
+        stroke-dashoffset:450;
+    }
+    100%{
+        stroke-dashoffset:315;
+    }
+}
+@keyframes secondStat{
+    0%{
+        stroke-dashoffset:450;
+    }
+    100%{
+        stroke-dashoffset:410;
+    }
+}

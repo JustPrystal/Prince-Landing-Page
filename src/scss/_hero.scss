@@ -7,12 +7,12 @@
     align-items: center;
     .inner{
         padding: 0 30px;
-        overflow: hidden;
+        // overflow: hidden;
         border-radius: 40px;
-        // border: 2px solid rgba($color: black, $alpha: 0.05);
-        position: relative;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), linear-gradient(90deg, #FFF 46.42%, rgba(255, 255, 255, 0.00) 100%);
+        border: 2px solid rgba($color: black, $alpha: 0.05);
         backdrop-filter: blur(3px);
+        position: relative;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), linear-gradient(90deg, #FFF 56.42%, rgba(255, 255, 255, 0.00) 100%);
         .wrap{
             display: flex;
             .model{
@@ -27,6 +27,7 @@
                 display: flex;
                 justify-content: flex-end;
                 flex-direction: column;
+                margin-right: 30px;
                 .heading{
                     font-family: "Lato";
                     font-size: 52px;
@@ -47,6 +48,7 @@
                     align-items: center;
                     border-radius: 40px;
                     border: 1px solid rgba(0, 0, 0, 0.05);
+                    margin-bottom: 20px;
                     .progress{
                         display: flex;
                         justify-content: center;
@@ -59,6 +61,14 @@
                             transform: translateX(-50%) translateY(-50%);
                             top: 50%;
                             font-size: 14px;
+                            font-weight: 900;
+                        }
+                        svg{
+                            stroke-dasharray:450;
+                            stroke-dashoffset:315;
+                            &.animate{
+                                animation: firstStat 2s ease-in-out;
+                            }
                         }
                     }
                     .text{
@@ -69,6 +79,38 @@
                         line-height: normal;
                         letter-spacing: 1.4px;
                         text-transform: uppercase;
+                        padding-right: 20px;
+                    }
+                }
+                .sub-heading{
+                    font-family: "Inter";
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.25px;
+                    margin-bottom: 40px;
+                }
+                .button{
+                    padding: 15px 30px;
+                    color: white;
+                    font-family: "Inter";
+                    width: max-content;
+                    font-size: 16px;
+                    font-style: normal;
+                    // font-weight: 700;
+                    line-height: 1.375;
+                    margin-bottom: 60px;
+                    letter-spacing: 0.32px;
+                    text-transform: uppercase;
+                    border-radius: 50px;
+                    background-image: linear-gradient(183deg, #4841D2 0%, #0E74F9 100%);
+                    transition: 100ms ease-in-out;
+                    background-size: 300%;
+                    background-position: left;
+                    &:hover{
+                        background-position:right;
+                        transition: 100ms ease-in-out;
                     }
                 }
             }

@@ -26,6 +26,12 @@
             case 'returns':
               include 'blocks/returns.php';
               break;
+            case 'conversions':
+              include 'blocks/conversions.php';
+              break;
+            case 'sales':
+              include 'blocks/sales.php';
+              break;
             
           }
         }

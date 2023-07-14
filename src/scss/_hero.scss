@@ -65,9 +65,9 @@
                         }
                         svg{
                             stroke-dasharray:450;
-                            stroke-dashoffset:315;
+                            stroke-dashoffset:450;
                             &.animate{
-                                animation: firstStat 2s ease-in-out;
+                                animation: firstStat 2s ease-in-out forwards;
                             }
                         }
                     }

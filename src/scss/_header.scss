@@ -16,6 +16,11 @@
             font-weight: 700;
             line-height: normal;
             letter-spacing: 0.25px;
+            transition: 200ms ease-in-out;
+            &.black{
+                transition: 200ms ease-in-out;
+                color: black;                
+            }
         }
         .shopify-tag{
             transform: translateX(5px);

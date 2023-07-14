@@ -8,11 +8,17 @@ $(document).ready(function(){
         scrollHorizontally: true,
         afterLoad: function(origin, destination, direction, trigger){
             if (destination == 1){
-                // $(".stat svg").removeClass("animate")
+                $(".logo").removeClass("black")
                 $(".stat1 .progress svg").addClass("animate")
             }else if (destination == 2){
-                // $(".stat svg").removeClass("animate")
+                $(".logo").addClass("black")
                 $(".stat2 .progress svg").addClass("animate")
+            }else if (destination == 3){
+                $(".logo").addClass("black")
+                $(".stat3 .progress svg").addClass("animate")
+            }else if (destination == 4){
+                $(".logo").removeClass("black")
+                $(".stat4 .progress svg").addClass("animate")
             }
         }
     });
@@ -35,9 +41,6 @@ $(document).ready(function(){
 })
 $(".tab-titles .tab-title").click(function(){ 
     index = $(this).data("index");
-    // console.log(index)
-    // tab = $(".slick-slide").attr("tabindex")
     $('.tabs').slick('slickGoTo', index);
-// console.log(tab);
 })
 

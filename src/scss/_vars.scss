@@ -31,3 +31,35 @@ $grad: linear-gradient(to top, $blue, $purple);
         stroke-dashoffset:410;
     }
 }
+@keyframes thirdStat{
+    0%{
+        stroke-dashoffset:450;
+    }
+    100%{
+        stroke-dashoffset:320;
+    }
+}
+@keyframes fourthStat{
+    0%{
+        stroke-dashoffset:450;
+    }
+    100%{
+        stroke-dashoffset:395;
+    }
+}
+@keyframes firstBgPurple{
+    0%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+@keyframes firstBgBlue{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(70%);
+    }
+}

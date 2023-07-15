@@ -1,0 +1,32 @@
+.footer{
+    padding: 40px 25px 60px 25px;
+    background-color: white;
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copyright{
+        color: var(--black-70, rgba(0, 0, 0, 0.70));
+        font-family: "Inter";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.14px;
+        span{
+            color: var(--black-20, rgba(0, 0, 0, 0.20));
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.14px;
+        }
+    }
+    .socials{
+        display: flex;
+        grid-gap: 5px;
+        align-items: center;
+    }
+}

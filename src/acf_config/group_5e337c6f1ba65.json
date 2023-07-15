@@ -168,6 +168,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_64b19948ecb2d": {
+                    "key": "layout_64b19948ecb2d",
+                    "name": "shopify",
+                    "label": "Shopify",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_64b19952ecb2e",
+                            "label": "fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_64b1980e962dc"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -203,5 +234,5 @@
     ],
     "active": 1,
     "description": "Block Chooser for all content types that will have blocks.",
-    "modified": 1689289457
+    "modified": 1689360744
 }

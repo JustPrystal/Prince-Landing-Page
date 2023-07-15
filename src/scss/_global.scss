@@ -30,9 +30,10 @@ body {
   position:relative;
 }
 .section{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  padding: 0 30px;
 }
 .inner{
   max-width: 1240px;

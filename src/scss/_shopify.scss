@@ -1,0 +1,224 @@
+.shopify{
+    position: relative;
+    overflow: hidden;
+    .blob{
+        position: absolute;
+        width: 60%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        filter: blur(40px);
+        &.purple{
+            background-color: $purple;
+            inset: 0 auto auto 0 ;
+            left: -15%;
+            top: -15%;
+            transform-origin: 50% 30%;
+            animation: blobRotate 6s linear infinite forwards;
+        }
+        &.blue{
+            animation: blobRotate 6s linear 2s infinite forwards;
+            transform-origin: 30% 50%;
+            background-color: $blue;
+            inset: auto 0 0 auto;
+            right: -15%;
+            bottom: -15%;
+        }
+    }
+    .cover{
+        position: absolute;
+        inset: 0;
+        backdrop-filter: blur(200px);
+    }
+    .inner{
+        display: flex;
+        align-items: center;
+        padding: 60px;
+        background: rgba(255, 255, 255, 0.60);
+        .wrap{
+            display: flex;
+            width: 100%;
+            grid-gap: 60px;
+            justify-content: center;
+            .content{
+                max-width: 450px;
+                width: 100%;
+                .heading{
+                    color: #000;
+                    font-family: "Lato";
+                    font-size: 52px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 1.04px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+                .stat{
+                    padding: 10px;
+                    grid-gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 40px;
+                    background-color: white; 
+                    margin-bottom: 20px;
+                    .progress{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        .percentage{
+                            font-family: "Inter";
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            top: 50%;
+                            font-size: 14px;
+                            font-weight: 900;
+                        }
+                        svg{
+                            stroke-dasharray:450;
+                            stroke-dashoffset:450;
+                            &.animate{
+                                animation: fifthStat 2s ease-in-out forwards;
+                            }
+                        }
+                    }
+                    .text{
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 1.4px;
+                        text-transform: uppercase;
+                        padding-right: 20px;
+                    }
+                }
+                .description{
+                    font-family: "Inter";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.16px;   
+                    margin-bottom: 20px; 
+                }
+                .button{
+                    padding: 15px 30px;
+                    color: white;
+                    font-family: "Inter";
+                    width: max-content;
+                    font-size: 16px;
+                    font-style: normal;
+                    // font-weight: 700;
+                    line-height: 1.375;
+                    margin-bottom: 60px;
+                    letter-spacing: 0.32px;
+                    text-transform: uppercase;
+                    border-radius: 50px;
+                    background-image: linear-gradient(183deg, #4841D2 0%, #0E74F9 100%);
+                    transition: 100ms ease-in-out;
+                    background-size: 300%;
+                    background-position: left;
+                    &:hover{
+                        background-position:right;
+                        transition: 100ms ease-in-out;
+                    }
+                }
+            }
+            .features{
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 100%;
+                .feature{
+                    transition: 600ms ease-in-out;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    padding-left: 20px;
+                    position: relative;
+                    align-items: center;
+                    &::after{
+                        position: absolute;
+                        content:"";
+                        bottom: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: rgba(0, 0, 0, 0.05);
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    background: rgba(255, 255, 255, 0.50);
+                    &.active{
+                        background: rgba(255, 255, 255, 1);
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        .stuff{
+                            .title{
+                                transition: 300ms ease-in-out;
+                                background: $grad;
+                                -webkit-background-clip: text;
+                                color: transparent;
+                            }
+                        }
+                        .icon{
+                            img{
+                                transition: 300ms ease-in-out;
+                                &.static{
+                                    opacity: 0;
+                                }
+                                &.animated{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                    .stuff{
+                        .title{
+                            transition: 300ms ease-in-out;
+                            font-family: "Inter";
+                            font-size: 22px;
+                            color: black;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: 2.2px;
+                            text-transform: uppercase;
+                            margin: 5px;
+                        }
+                        .text{
+                            color:rgba(0, 0, 0, 0.20);
+                            font-family: "Inter";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 0.16px;
+                        }
+                    }
+                    .icon{
+                        width: 75px;
+                        height: 75px;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            transition: 300ms ease-in-out;
+                            object-fit: cover;
+                            &.static{
+                                opacity: 1;
+                            }
+                            &.animated{
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

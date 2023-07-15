@@ -4,9 +4,9 @@
     <div id="fullpage">
         <?php
         get_blocks();
+        get_footer();
         ?>
     </div>
     <?php
-    get_footer();
 
 ?>

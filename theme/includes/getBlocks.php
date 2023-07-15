@@ -32,6 +32,9 @@
             case 'sales':
               include 'blocks/sales.php';
               break;
+            case 'shopify':
+              include 'blocks/shopify.php';
+              break;
             
           }
         }

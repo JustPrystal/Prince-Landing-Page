@@ -47,6 +47,14 @@ $grad: linear-gradient(to top, $blue, $purple);
         stroke-dashoffset:395;
     }
 }
+@keyframes fifthStat{
+    0%{
+        stroke-dashoffset:450;
+    }
+    100%{
+        stroke-dashoffset:375;
+    }
+}
 @keyframes firstBgPurple{
     0%{
         transform: rotate(-10deg);
@@ -61,5 +69,13 @@ $grad: linear-gradient(to top, $blue, $purple);
     }
     100%{
         transform: translateX(70%);
+    }
+}
+@keyframes blobRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }

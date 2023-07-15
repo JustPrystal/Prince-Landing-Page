@@ -1,5 +1,4 @@
 .hero{
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -13,13 +12,31 @@
         backdrop-filter: blur(3px);
         position: relative;
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), linear-gradient(90deg, #FFF 56.42%, rgba(255, 255, 255, 0.00) 100%);
+        @media(max-width: 767px){
+            background: white;
+            margin-top: 120px;
+            margin-bottom: 25px;
+        }
         .wrap{
             display: flex;
+            @media(max-width: 767px){
+                flex-direction: column;
+                align-items: center;
+            }
             .model{
                 width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media(max-width: 767px){
+                    width: 100%;
+                }
                 video{
                     width: 100%;
                     object-fit: cover;
+                    @media(max-width: 767px){
+                        max-width: 350px;
+                    }
                 }
             }
             .content{
@@ -28,6 +45,13 @@
                 justify-content: flex-end;
                 flex-direction: column;
                 margin-right: 30px;
+                @media(max-width: 991px){
+                    padding-top: 60px;
+                }
+                @media(max-width: 767px){
+                    width: 100%;
+                    padding-top: 0;
+                }
                 .heading{
                     font-family: "Lato";
                     font-size: 52px;
@@ -40,6 +64,13 @@
                     -webkit-background-clip: text;
                     color: transparent;
                     margin-bottom: 20px;
+                    @media(max-width: 1200px){
+                        font-size: 44px;
+                    }
+                    @media(max-width: 991px){
+                        font-size: 40px;
+
+                    }
                 }
                 .stat{
                     padding: 10px;
@@ -80,6 +111,9 @@
                         letter-spacing: 1.4px;
                         text-transform: uppercase;
                         padding-right: 20px;
+                        @media(max-width: 991px){
+                            padding-right: 0px;
+                        }
                     }
                 }
                 .sub-heading{
@@ -90,6 +124,13 @@
                     line-height: normal;
                     letter-spacing: 0.25px;
                     margin-bottom: 40px;
+                    @media(max-width: 1200px){
+                        font-size: 22px;
+                    }
+                    @media(max-width: 991px){
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
                 }
                 .button{
                     padding: 15px 30px;

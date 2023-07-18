@@ -24,6 +24,8 @@
         backdrop-filter: blur(40px);
     }
     .inner{
+        position: relative;
+        z-index: 1;
         background-color: rgba($color: white, $alpha: 0.2);
         .wrap{
             display: flex;

@@ -2,7 +2,7 @@
     <div class="inner">
         <div class="wrap">
             <div class="model">
-                <video data-keepplaying loop muted autoplay src="<?php echo $block["jacket_video"]?>"></video>
+                <video playsinline data-keepplaying loop muted autoplay src="<?php echo $block["jacket_video"]?>"></video>
             </div>
             <div class="content">
                 <h1 class="heading"><?php echo $block["heading"]?></h1>

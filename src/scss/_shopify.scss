@@ -40,12 +40,15 @@
     .cover{
         position: absolute;
         inset: 0;
+        z-index: 1;
         backdrop-filter: blur(200px);
     }
     .inner{
         display: flex;
         align-items: center;
         padding: 60px;
+        position: relative;
+        z-index: 2;
         background: rgba(255, 255, 255, 0.60);
         @media(max-width:991px){
             padding: 30px;

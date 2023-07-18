@@ -42,6 +42,8 @@
     .inner{
         display: flex;
         align-items: flex-end;
+        position: relative;
+        z-index: 1;
         backdrop-filter: blur(0);
         justify-content: flex-end;
         border: none;

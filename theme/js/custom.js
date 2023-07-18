@@ -1,11 +1,7 @@
 $(document).ready(function(){
     
-    //fullpage init
     let switchRunOnce = false;
     $('#fullpage').fullpage({
-        //options here
-        // scrollOverflow: true,
-        // scrollOverflowMacStyle:true,
         responsiveWidth: 767,
         autoScrolling:true,
         scrollHorizontally: true,

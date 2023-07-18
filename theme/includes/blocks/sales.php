@@ -1,5 +1,5 @@
 <section class="section sales">
-    <video playsinline data-keepplaying loop muted autoplay src="<?php echo $block["background_video"]?>"></video>
+    <video  data-keepplaying loop muted autoplay playsinline src="<?php echo $block["background_video"]?>"></video>
     <div class="inner">
         <div class="content">
             <h2 class="heading"><?php echo $block["heading"]?></h2>

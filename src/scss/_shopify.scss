@@ -6,7 +6,8 @@
         width: 60%;
         aspect-ratio: 1;
         border-radius: 50%;
-        filter: blur(40px);
+        opacity: 0.7;
+        filter: blur(500px);
         @media(max-width:767px){
             width: 80%;
         }
@@ -36,12 +37,6 @@
                 right: 15%;
             }
         }
-    }
-    .cover{
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-        backdrop-filter: blur(200px);
     }
     .inner{
         display: flex;

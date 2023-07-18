@@ -5,7 +5,7 @@
     <div class="inner">
         <div class="wrap">
             <div class="model">
-                <video playsinline data-keepplaying loop muted autoplay src="<?php echo $block["model_video"]?>"></video>
+                <video data-keepplaying loop muted autoplay playsinline src="<?php echo $block["model_video"]?>"></video>
                 <h2 class="heading"><?php echo $block["heading"]?></h2>
             </div>
             <div class="content">

@@ -95,7 +95,7 @@
                     <div class="options">
                         <img src="<?php echo $block["image_options"]?>" alt="">
                     </div>
-                    <video playsinline data-keepplaying loop muted autoplay src="<?php echo $block["model_video"]?>"></video>
+                    <video data-keepplaying loop muted autoplay playsinline src="<?php echo $block["model_video"]?>"></video>
                 </div>
             </div>
         </div>

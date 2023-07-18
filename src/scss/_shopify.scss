@@ -1,14 +1,17 @@
 .shopify{
     position: relative;
     overflow: hidden;
+    width: 100vh;
     .blob{
         position: absolute;
         width: 60%;
         aspect-ratio: 1;
         border-radius: 50%;
         opacity: 0.7;
-        filter: blur(500px);
+        filter: blur(300px);
         @media(max-width:767px){
+            opacity: 1;
+            filter: blur(110px);
             width: 80%;
         }
         &.purple{
@@ -60,9 +63,9 @@
             width: 100%;
             grid-gap: 60px;
             justify-content: center;
-            @media(max-width:991px){
-                grid-gap: 30px;
+            @media(max-width:767px){
                 flex-direction: column;
+                grid-gap: 30px;
             }
             @media(max-width:567px){
                 grid-gap: 15px;

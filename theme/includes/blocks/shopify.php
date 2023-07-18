@@ -41,6 +41,7 @@
                     </div>
                 <?php } ?>
             </div>
+            <a href="<?php echo $block["button"]["url"]?>" class="button mobile-only"><?php echo $block["button"]["title"]?></a>
         </div>
     </div>
 </section>

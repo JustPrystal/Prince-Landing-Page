@@ -4,9 +4,8 @@ $(document).ready(function(){
     let switchRunOnce = false;
     $('#fullpage').fullpage({
         //options here
-        scrollOverflow: true,
-        normalScrollElements: '.hero',
-        scrollOverflowMacStyle:true,
+        // scrollOverflow: true,
+        // scrollOverflowMacStyle:true,
         responsiveWidth: 767,
         autoScrolling:true,
         scrollHorizontally: true,

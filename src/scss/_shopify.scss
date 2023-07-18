@@ -7,6 +7,9 @@
         aspect-ratio: 1;
         border-radius: 50%;
         filter: blur(40px);
+        @media(max-width:767px){
+            width: 80%;
+        }
         &.purple{
             background-color: $purple;
             inset: 0 auto auto 0 ;
@@ -14,6 +17,11 @@
             top: -15%;
             transform-origin: 50% 30%;
             animation: blobRotate 6s linear infinite forwards;
+            @media(max-width:767px){
+                left: 15%;
+                top: 0;
+                transform-origin: 0% 100%;
+            }
         }
         &.blue{
             animation: blobRotate 6s linear 2s infinite forwards;
@@ -22,6 +30,11 @@
             inset: auto 0 0 auto;
             right: -15%;
             bottom: -15%;
+            @media(max-width:767px){
+                transform-origin: 100% 0%;
+                bottom: 0;
+                right: 15%;
+            }
         }
     }
     .cover{
@@ -34,14 +47,37 @@
         align-items: center;
         padding: 60px;
         background: rgba(255, 255, 255, 0.60);
+        @media(max-width:991px){
+            padding: 30px;
+        }
+        @media(max-width:767px){
+            margin-top: 120px;
+            margin-bottom: 25px;
+        }
+        @media(max-width:567px){
+            padding: 20px;
+        }
         .wrap{
             display: flex;
             width: 100%;
             grid-gap: 60px;
             justify-content: center;
+            @media(max-width:991px){
+                grid-gap: 30px;
+                flex-direction: column;
+            }
+            @media(max-width:567px){
+                grid-gap: 15px;
+            }
             .content{
                 max-width: 450px;
                 width: 100%;
+                @media(max-width:767px){
+                    max-width: none
+                }
+                @media(max-width:567px){
+                    padding-top: 30px;   
+                }
                 .heading{
                     color: #000;
                     font-family: "Lato";
@@ -52,6 +88,13 @@
                     letter-spacing: 1.04px;
                     text-transform: uppercase;
                     margin-bottom: 20px;
+                    @media(max-width:991px){
+                        font-size: 44px;
+                    }
+                    @media(max-width:567px){
+                        font-size: 28px;
+                        margin-bottom: 15px;
+                    }
                 }
                 .stat{
                     padding: 10px;
@@ -61,6 +104,9 @@
                     border-radius: 40px;
                     background-color: white; 
                     margin-bottom: 20px;
+                    @media(max-width:567px){
+                        margin-bottom: 15px;
+                    }
                     .progress{
                         display: flex;
                         justify-content: center;
@@ -101,7 +147,10 @@
                     font-weight: 500;
                     line-height: normal;
                     letter-spacing: 0.16px;   
-                    margin-bottom: 20px; 
+                    margin-bottom: 20px;
+                    @media(max-width:567px){
+                        margin-bottom: 0px;
+                    } 
                 }
                 .button{
                     padding: 15px 30px;
@@ -123,6 +172,12 @@
                     &:hover{
                         background-position:right;
                         transition: 100ms ease-in-out;
+                    }
+                    @media(max-width:767px){
+                        margin-bottom: 0px;
+                    }
+                    @media(max-width:567px){
+                        display: none;
                     }
                 }
             }
@@ -153,8 +208,8 @@
                     background: rgba(255, 255, 255, 0.50);
                     &.active{
                         background: rgba(255, 255, 255, 1);
-                        padding-top: 20px;
-                        padding-bottom: 20px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
                         .stuff{
                             .title{
                                 transition: 300ms ease-in-out;
@@ -187,6 +242,9 @@
                             letter-spacing: 2.2px;
                             text-transform: uppercase;
                             margin: 5px;
+                            @media(max-width:567px){
+                                font-size: 14px;
+                            }
                         }
                         .text{
                             color:rgba(0, 0, 0, 0.20);
@@ -196,12 +254,19 @@
                             font-weight: 500;
                             line-height: normal;
                             letter-spacing: 0.16px;
+                            @media(max-width:567px){
+                                font-size: 10px;
+                            }
                         }
                     }
                     .icon{
                         width: 75px;
                         height: 75px;
                         position: relative;
+                        @media(max-width:567px){
+                            width: 55px;
+                            height: 55px;
+                        }
                         img{
                             position: absolute;
                             top: 0;
@@ -217,6 +282,31 @@
                             }
                         }
                     }
+                }
+            }
+            .mobile-only{
+                display: none;
+                padding: 15px 30px;
+                color: white;
+                font-family: "Inter";
+                width: 1005;
+                font-size: 16px;
+                font-style: normal;
+                text-align: center;
+                line-height: 1.375;
+                letter-spacing: 0.32px;
+                text-transform: uppercase;
+                border-radius: 50px;
+                background-image: linear-gradient(183deg, #4841D2 0%, #0E74F9 100%);
+                transition: 100ms ease-in-out;
+                background-size: 300%;
+                background-position: left;
+                &:hover{
+                    background-position:right;
+                    transition: 100ms ease-in-out;
+                }
+                @media(max-width:567px){
+                    display: block;
                 }
             }
         }

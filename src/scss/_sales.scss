@@ -5,13 +5,49 @@
         align-items: flex-end;
         justify-content: flex-end;
         padding-bottom: 85px;
+        @media(max-width:567px){
+            padding-bottom: 40px;
+            padding-top: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    .mobile-only{
+        display: none;
+        padding: 15px 30px;
+        position: relative;
+        color: white;
+        font-family: "Inter";
+        width: max-content;
+        font-size: 16px;
+        width: 100%;
+        font-style: normal;
+        line-height: 1.375;
+        text-align: center;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        background-image: linear-gradient(183deg, #4841D2 0%, #0E74F9 100%);
+        transition: 100ms ease-in-out;
+        background-size: 300%;
+        background-position: left;
+        &:hover{
+            background-position:right;
+            transition: 100ms ease-in-out;
+        }
+        @media(max-width:567px){
+            display: block;
+        }
     }
     .inner{
         display: flex;
         align-items: flex-end;
-        justify-content: flex-end;
         backdrop-filter: blur(0);
+        justify-content: flex-end;
         border: none;
+        @media(max-width:767px){
+            justify-content: center;
+        }
         .content{
             display: flex;
             flex-direction: column;
@@ -22,6 +58,13 @@
             backdrop-filter: blur(3px);
             max-width: 620px;
             background:rgba(255, 255, 255, 0.60);
+            @media(max-width:767px){
+                align-items: flex-start;
+                padding: 30px;
+            }
+            @media(max-width:567px){
+                padding: 25px;
+            }
             .heading{
                 color: #000;
                 text-align: right;
@@ -33,6 +76,14 @@
                 letter-spacing: 1.04px;
                 margin-bottom: 20px;
                 text-transform: uppercase;
+                @media(max-width:767px){
+                    font-size: 44px;
+                    text-align: left;
+                }
+                @media(max-width:567px){
+                    font-size: 28px;
+                    margin-bottom: 15px;
+                }
                 span{
                     background: $grad;
                     -webkit-background-clip: text;
@@ -49,6 +100,14 @@
                 line-height: normal;
                 letter-spacing: 0.2px;
                 margin-bottom: 20px;
+                @media(max-width:767px){
+                    font-size: 18px;
+                    text-align: left;
+                }
+                @media(max-width:567px){
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
             }
             .stat{
                 max-width: 400px;
@@ -102,6 +161,14 @@
                 font-weight: 500;
                 line-height: normal;
                 letter-spacing: 0.2px;
+                @media(max-width:767px){
+                    font-size: 18px;
+                    text-align: left;
+                }
+                @media(max-width:567px){
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
             }
             .button{
                 padding: 15px 30px;
@@ -122,13 +189,18 @@
                     background-position:right;
                     transition: 100ms ease-in-out;
                 }
+                @media(max-width:567px){
+                    display: none;
+                }
             }
         }
     }
     video{
         position: absolute;
-        inset: 0;
-        width: 100%;
+        top: 0;
         height: 100%;
+        object-fit: cover;
+        left: 0;
+        width: 100%;
     }
 }

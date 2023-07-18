@@ -31,6 +31,14 @@ $grad: linear-gradient(to top, $blue, $purple);
         stroke-dashoffset:410;
     }
 }
+@keyframes secondStatRes{
+    0%{
+        stroke-dashoffset:450;
+    }
+    100%{
+        stroke-dashoffset:410;
+    }
+}
 @keyframes thirdStat{
     0%{
         stroke-dashoffset:450;

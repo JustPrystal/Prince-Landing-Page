@@ -35,6 +35,12 @@ function initFullpage(){
         }
     });
 }
+// $(".header").fadeOut()
+// document.onreadystatechange = () => {
+//     if (document.readyState === "complete") {
+//       $(".header").fadeIn()
+//     }
+//   };
 $(document).ready(function(){
     
     //preloader

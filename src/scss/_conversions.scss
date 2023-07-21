@@ -8,7 +8,7 @@
         inset: 0;
         scale: 1.5;
         background: linear-gradient(0deg, $purple 0%, transparent 70%);
-        animation: firstBgPurple 4s ease-in-out infinite alternate;
+        animation: firstBgPurple 4s ease-in-out 1s infinite alternate;
     }
     .blue{
         transition: 500ms;
@@ -19,7 +19,7 @@
         filter: blur(40px);
         left: -50%;
         background: radial-gradient($blue 0%, transparent 70%);
-        animation: firstBgBlue 4s ease-in-out infinite alternate;
+        animation: firstBgBlue 4s ease-in-out 1s infinite alternate;
     }
     .cover{
         position: absolute;

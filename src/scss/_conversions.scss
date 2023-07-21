@@ -3,6 +3,7 @@
     overflow: hidden;
     width: 100vh;
     .purple{
+        transition: 500ms;
         position: absolute;
         inset: 0;
         scale: 1.5;
@@ -10,6 +11,7 @@
         animation: firstBgPurple 4s ease-in-out infinite alternate;
     }
     .blue{
+        transition: 500ms;
         position: absolute;
         width: 120%;
         height: 100%;
@@ -27,6 +29,8 @@
     .inner{
         position: relative;
         z-index: 1;
+        margin-top: 50px;
+        margin-bottom: 50px;
         background-color: rgba($color: white, $alpha: 0.2);
         .wrap{
             display: flex;
@@ -171,7 +175,7 @@
                             stroke-dasharray:450;
                             stroke-dashoffset:450;
                             &.animate{
-                                animation: thirdStat 2s ease-in-out forwards;
+                                animation: thirdStat 1.4s ease-in-out forwards;
                             }
                         }
                     }

@@ -153,7 +153,7 @@
                             stroke-dasharray:450;
                             stroke-dashoffset:450;
                             &.animate{
-                                animation: secondStat 2s ease-in-out forwards;
+                                animation: secondStat 0.4s ease-in-out forwards;
                             }
                         }
                     }
@@ -357,7 +357,7 @@
                             stroke-dasharray:450;
                             stroke-dashoffset:450;
                             &.animate{
-                                animation: secondStatRes 2s ease-in-out forwards;
+                                animation: secondStatRes 0.4s ease-in-out forwards;
                             }
                         }
                     }

@@ -1,6 +1,5 @@
-$(document).ready(function(){
-    
-    let switchRunOnce = false;
+let switchRunOnce = false;
+function initFullpage(){
     $('#fullpage').fullpage({
         responsiveWidth: 767,
         autoScrolling:true,
@@ -19,7 +18,7 @@ $(document).ready(function(){
                 $(".logo").removeClass("black")
                 $(".stat4 .progress svg").addClass("animate")
             }else if (destination == 5){
-                $(".logo").removeClass("black")
+                $(".logo").addClass("black")
                 $(".stat5 .progress svg").addClass("animate")
                 if(switchRunOnce == false){
                     $(".feature").eq(0).addClass("active")
@@ -35,6 +34,12 @@ $(document).ready(function(){
             }
         }
     });
+}
+$(document).ready(function(){
+    
+    //preloader
+
+
 
     //modal slick
     $(".tab-title").click(function(){
@@ -56,4 +61,20 @@ $(document).ready(function(){
         $('.tabs').slick('slickGoTo', index);
     })
 })
+let progress = 450
+let time = 120
+var timer = setInterval(() => {
+    $(".preloader svg circle").css("stroke-dashoffset", `${progress}`)
+    let percentage = ((450 - progress)/1.5)
+    $(".preloader .percentage .change").text(`${Math.round(percentage)}`)
+    if (progress <= 300){
+        clearInterval(timer)
+        $('body').css("overflow-y", "visible")
+        $('body').css("overflow-x", "hidden")
+        $("#fullpage").removeClass("notready")
+        $(".preview").fadeOut()
+        initFullpage()
+    }
+    progress--
+}, time);
 

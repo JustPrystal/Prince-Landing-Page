@@ -6,6 +6,7 @@
         position: absolute;
         width: 60%;
         aspect-ratio: 1;
+        transition: 500ms;
         border-radius: 50%;
         opacity: 0.7;
         filter: blur(300px);
@@ -20,7 +21,7 @@
             left: -15%;
             top: -15%;
             transform-origin: 50% 30%;
-            animation: blobRotate 6s linear infinite forwards;
+            animation: blobRotate 6s linear 1s infinite forwards;
             @media(max-width:767px){
                 left: 15%;
                 top: 0;
@@ -126,7 +127,7 @@
                             stroke-dasharray:450;
                             stroke-dashoffset:450;
                             &.animate{
-                                animation: fifthStat 2s ease-in-out forwards;
+                                animation: fifthStat 1s ease-in-out forwards;
                             }
                         }
                     }
@@ -214,9 +215,7 @@
                         .stuff{
                             .title{
                                 transition: 300ms ease-in-out;
-                                background: $grad;
-                                -webkit-background-clip: text;
-                                color: transparent;
+                                color: $purple;
                             }
                         }
                         .icon{
@@ -248,7 +247,7 @@
                             }
                         }
                         .text{
-                            color:rgba(0, 0, 0, 0.20);
+                            color:rgba(0, 0, 0, 0.40);
                             font-family: "Inter";
                             font-size: 16px;
                             font-style: normal;

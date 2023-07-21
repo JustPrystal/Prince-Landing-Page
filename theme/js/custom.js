@@ -47,6 +47,9 @@ $(document).ready(function(){
     })
     $(".close-modal").click(function(){
         $(".modal").fadeOut();
+        for (let i = 0; i < $(".tab-item").length; i++) {
+            document.getElementsByClassName('tab-item')[i].pause();
+        }
     })
     $(".tabs").slick({
         dots: true,
@@ -59,6 +62,15 @@ $(document).ready(function(){
     $(".tab-titles .tab-title").click(function(){ 
         index = $(this).data("index");
         $('.tabs').slick('slickGoTo', index);
+        for (let i = 0; i < $(".tab-item").length; i++) {
+            document.getElementsByClassName('tab-item')[i].pause();
+        }
+        $(".tab-item").trigger("pause")
+    })
+    $(".arrow").click(function(){
+        for (let i = 0; i < $(".tab-item").length; i++) {
+            document.getElementsByClassName('tab-item')[i].pause();
+        }
     })
     if($(window).innerWidth() >= 767){
         initFullpage()

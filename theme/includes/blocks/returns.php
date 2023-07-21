@@ -22,10 +22,10 @@
 
                 <?php foreach($block["tabs"] as $tab){
                     if($tab["media_type"] == "image"){?>
-                        <img src="<?php echo $tab["image"]?>" alt="" class="tab-item">
+                        <img src="<?php echo $tab["url"]?>" alt="" class="tab-item">
                     <?php } 
                     else {?>
-                        <video controls class="tab-item" src="<?php echo $tab["video"]?>"></video>
+                        <video controls class="tab-item" src="<?php echo $tab["url"]?>"></video>
                     <?php } ?>
                 <?php } ?>
                 

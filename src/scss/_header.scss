@@ -32,16 +32,19 @@
     z-index: 999999999999;
     inset: 0 0 auto 0;
     height: 100vh;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: rgba($color: white, $alpha: 0.3);
     backdrop-filter: blur(8px);
+    @media (max-width:767px){
+        display: flex;
+    }
 }
 .preloader{
+    display: flex;
     scale: 3;
     transition: 500ms;
-    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -62,7 +65,11 @@
     }
 }
 #fullpage{
+    overflow: hidden;
     &.notready{
-        filter: blur(8px);
+        filter: blur(0px);
+        @media (max-width:767px){
+            filter: blur(8px);
+        }
     }
 }

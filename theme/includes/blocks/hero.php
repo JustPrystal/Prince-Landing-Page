@@ -1,4 +1,4 @@
-<section class="section fp-auto-height hero" style="background-image: url(<?php echo $block["background_image"]?>);">
+<section class="section hero" style="background-image: url(<?php echo $block["background_image"]?>);">
     <div class="inner">
         <div class="wrap">
             <div class="model">

@@ -60,7 +60,11 @@ $(document).ready(function(){
         index = $(this).data("index");
         $('.tabs').slick('slickGoTo', index);
     })
+    if($(window).innerWidth() >= 767){
+        initFullpage()
+    }
 })
+if($(window).innerWidth() <= 767){
 let progress = 450
 let time = 120
 var timer = setInterval(() => {
@@ -69,12 +73,14 @@ var timer = setInterval(() => {
     $(".preloader .percentage .change").text(`${Math.round(percentage)}`)
     if (progress <= 300){
         clearInterval(timer)
-        $('body').css("overflow-y", "visible")
-        $('body').css("overflow-x", "hidden")
-        $("#fullpage").removeClass("notready")
-        $(".preview").fadeOut()
-        initFullpage()
+        if($(window).innerWidth() <= 767){
+            $('body').css("overflow-y", "visible")
+            $('body').css("overflow-x", "hidden")
+            $("#fullpage").removeClass("notready")
+            $(".preview").fadeOut()
+            initFullpage()
+        }
     }
     progress--
 }, time);
-
+}

@@ -1,9 +1,15 @@
+.fp-section{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
 .hero{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     display: flex;
     align-items: center;
+    overflow: hidden;
     .inner{
         padding: 0 30px;
         // overflow: hidden;

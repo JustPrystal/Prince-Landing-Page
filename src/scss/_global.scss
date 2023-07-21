@@ -28,7 +28,10 @@ a{
 }
 body {
   position:relative;
-  overflow: hidden;
+  overflow-y: visible;
+  @media (max-width:767px) {
+    overflow-y: hidden;
+  }
 }
 .section{
   min-height: 100vh;

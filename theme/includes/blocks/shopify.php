@@ -28,18 +28,21 @@
                 <a href="<?php echo $block["button"]["url"]?>" class="button"><?php echo $block["button"]["title"]?></a>
             </div>
             <div class="features">
-                <?php foreach($block["features"] as $ft){?>
+                <?php 
+                $j = 1;
+                foreach($block["features"] as $ft){?>
                     <div class="feature">
                         <div class="stuff">
                             <div class="title"><?php echo $ft["title"]?></div>
                             <div class="text"><?php echo $ft["text"]?></div>
                         </div>
                         <div class="icon">
-                            <img class="static" src="<?php echo $ft["icon"]?>" alt="">
-                            <img class="animated" src="<?php echo $ft["animation"]?>" alt="">
+                            <div class="number">0<?php echo $j?></div>
                         </div>
                     </div>
-                <?php } ?>
+                <?php 
+                $j++;
+                } ?>
             </div>
             <a href="<?php echo $block["button"]["url"]?>" class="button mobile-only"><?php echo $block["button"]["title"]?></a>
         </div>

@@ -43,20 +43,6 @@
 				"loadInFooter" => false
 			],
 			[
-				"name" => 'TweenMax.js', 
-				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js',
-				"version" => '2.1.2_defer',
-				"loadInFooter" => true
-			],
-			[
-				"name" => 'hammer.js', 
-				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js',
-				"version" => '2.0.8_defer',
-				"loadInFooter" => true
-			],
-			[
 				"name" => 'slick.min.js', 
 				"type" => 'js',
 				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js',
@@ -69,13 +55,6 @@
 				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js',
 				"version" => '2.9.7',
 				"loadInFooter" => true
-			],
-			[
-				"name" => 'gsap.js', 
-				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js',
-				"version" => '1.0.0',
-				"loadInFooter" => false
 			],
 			[
 				"name" => 'custom.js', 

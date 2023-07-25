@@ -42,6 +42,12 @@ function initFullpage(){
 //     }
 //   };
 $(document).ready(function(){
+
+    //mobile bg
+
+    if($(window).innerWidth() <= 567){
+        $(".hero").css("background-image", `url(${$(".hero").attr("data-mobile")})`)
+    }
     
     //preloader
 
@@ -84,7 +90,7 @@ $(document).ready(function(){
 })
 if($(window).innerWidth() <= 767){
 let progress = 450
-let time = 120
+let time = 90
 var timer = setInterval(() => {
     $(".preloader svg circle").css("stroke-dashoffset", `${progress}`)
     let percentage = ((450 - progress)/1.5)
@@ -107,5 +113,12 @@ $(window).scroll(function(){
         $(".header").addClass("scrolled")
     }else{
         $(".header").removeClass("scrolled")
+    }
+}) 
+$(window).resize(function(){
+    if($(window).innerWidth() <= 567){
+        $(".hero").css("background-image", `url(${$(".hero").attr("data-mobile")})`)
+    }else{
+        $(".hero").css("background-image", `url(${$(".hero").attr("data-desktop")})`)
     }
 })

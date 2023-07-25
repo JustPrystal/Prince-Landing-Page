@@ -95,7 +95,7 @@
                     <div class="options">
                         <img src="<?php echo $block["image_options"]?>" alt="">
                     </div>
-                    <video data-keepplaying loop muted autoplay playsinline src="<?php echo $block["model_video"]?>"></video>
+                    <video data-keepplaying loop muted autoplay playsinline src="https://res.cloudinary.com/dzbpsu654/video/upload/v1690244611/new%20videos/New_Lightning_stxzxq.mp4"></video>
                 </div>
             </div>
         </div>

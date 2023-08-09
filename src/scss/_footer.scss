@@ -29,5 +29,10 @@
         display: flex;
         grid-gap: 5px;
         align-items: center;
+        .social{
+            &:last-child{
+                margin: 0 8px;
+            }
+        }
     }
 }

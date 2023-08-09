@@ -1,36 +1,5 @@
 <section class="section returns">
     <div class="inner">
-        <div class="modal">
-            <svg class="close-modal" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="18" fill="black" fill-opacity="0.7"/>
-                <path d="M12 12L24 24" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                <path d="M24 12L12 24" stroke="white" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-            <svg class="arrow prev" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="18" fill="black" fill-opacity="0.7"/>
-                <path d="M18 12L12 18" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                <path d="M12 18L18 24" stroke="white" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-            <svg class="arrow next" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="18" fill="black" fill-opacity="0.7"/>
-                <path d="M15 12L21 18" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                <path d="M21 18L15 24" stroke="white" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-
-
-            <div class="tabs">
-
-                <?php foreach($block["tabs"] as $tab){
-                    if($tab["media_type"] == "image"){?>
-                        <img src="<?php echo $tab["url"]?>" alt="" class="tab-item">
-                    <?php } 
-                    else {?>
-                        <video controls class="tab-item" src="<?php echo $tab["url"]?>"></video>
-                    <?php } ?>
-                <?php } ?>
-                
-            </div>
-        </div>
         <div class="wrap">
             <div class="content">
                 <div class="heading"><?php echo $block["heading"]?></div>

@@ -2,6 +2,7 @@
     <div class="inner">
         <div class="wrap">
             <div class="model">
+            <!-- <iframe src="https://player.vimeo.com/video/849227061?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;controls=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="jacket"></iframe> -->
                 <video data-keepplaying loop muted autoplay playsinline src="<?php echo "https://res.cloudinary.com/dzbpsu654/video/upload/v1690244612/new%20videos/Jacket_3_wmuqng.mp4"?>" ></video>
             </div>
             <div class="content">

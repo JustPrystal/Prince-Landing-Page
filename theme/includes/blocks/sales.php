@@ -1,5 +1,9 @@
 <section class="section sales">
-    <video  data-keepplaying loop muted autoplay playsinline src="<?php echo $block["background_video"]?>"></video>
+<!-- <iframe class="video" src="https://player.vimeo.com/video/849226891?badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479&amp;muted=1&amp;controls=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;" title="B"></iframe> -->
+    <!-- <script src="https://player.vimeo.com/api/player.js%22%3E"></script> -->
+    <!-- <iframe class="video" src="https://player.vimeo.com/video/849227247?h=51133dc079" width="640" height="1133" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+<!-- <div class="video" style="padding:56.37% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/849226891?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="B"></iframe></div><script src="https://player.vimeo.com/api/player.js%22%3E"></script> -->
+    <video class="video" data-keepplaying loop muted autoplay playsinline src="https://res.cloudinary.com/dzbpsu654/video/upload/v1690404413/Optimized%20Videos/B_jupvwf.mp4"></video>
     <div class="inner">
         <div class="content">
             <h2 class="heading"><?php echo $block["heading"]?></h2>

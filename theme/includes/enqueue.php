@@ -5,27 +5,21 @@
 		$templatedir = get_template_directory_uri();
 		$enqueList = [	
 			[
-				"name" => 'FontAwesome.css', 
-				"type" => 'css',
-				"path" => 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
-				"version" => '4.7.0_defer'
-			],
-			[
 				"name" => 'fullpage.min.css', 
 				"type" => 'css',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css',
+				"path" => $templatedir . '/fullpage.min.css',
 				"version" => '2.9.7'
 			],
 			[
 				"name" => 'slick-theme.css', 
 				"type" => 'css',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css',
+				"path" => $templatedir . '/slick-theme.min.css',
 				"version" => '1.8.1'
 			],
 			[
 				"name" => 'slick.css', 
 				"type" => 'css',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css',
+				"path" => $templatedir . '/slick.css',
 				"version" => '1.8.1'
 			],
 			[
@@ -38,21 +32,21 @@
 			[
 				"name" => 'jquery.js', 
 				"type" => 'js',
-				"path" => 'https://code.jquery.com/jquery-3.3.1.min.js',
+				"path" => $templatedir . '/js/jquery-3.3.1.min.js',
 				"version" => '3.3.1',
 				"loadInFooter" => false
 			],
 			[
 				"name" => 'slick.min.js', 
 				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js',
+				"path" => $templatedir . '/js/slick.min.js',
 				"version" => '1.8.1',
 				"loadInFooter" => true
 			],
 			[
 				"name" => 'fullpage.min.js', 
 				"type" => 'js',
-				"path" => 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js',
+				"path" => $templatedir . '/js/fullpage.min.js',
 				"version" => '2.9.7',
 				"loadInFooter" => true
 			],

@@ -5,7 +5,8 @@
     <div class="inner">
         <div class="wrap">
             <div class="model">
-                <video data-keepplaying loop muted autoplay playsinline src="https://res.cloudinary.com/dzbpsu654/video/upload/v1690244614/new%20videos/New_Switch_ex8seg.mp4"></video>
+                <img src="<?php echo $block["mockup"]?>" alt="" class="mockup">
+                <!-- <video data-keepplaying loop muted autoplay playsinline src="https://res.cloudinary.com/dzbpsu654/video/upload/v1690244614/new%20videos/New_Switch_ex8seg.mp4"></video> -->
                 <h2 class="heading"><?php echo $block["heading"]?></h2>
             </div>
             <div class="content">

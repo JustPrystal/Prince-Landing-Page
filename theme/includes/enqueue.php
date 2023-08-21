@@ -44,6 +44,13 @@
 				"loadInFooter" => true
 			],
 			[
+				"name" => 'scrolloverflow.min.js', 
+				"type" => 'js',
+				"path" => $templatedir . '/js/scrolloverflow.min.js',
+				"version" => '2.9.7',
+				"loadInFooter" => true
+			],
+			[
 				"name" => 'fullpage.min.js', 
 				"type" => 'js',
 				"path" => $templatedir . '/js/fullpage.min.js',

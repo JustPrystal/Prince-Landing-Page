@@ -3,7 +3,8 @@ function initFullpage(){
     $('#fullpage').fullpage({
         responsiveWidth: 767,
         autoScrolling:true,
-        scrollHorizontally: true,
+        scrollOverflow: true,
+        // scrollHorizontally: true,
         afterLoad: function(origin, destination, direction, trigger){
             if (destination == 1){
                 $(".logo").removeClass("black")

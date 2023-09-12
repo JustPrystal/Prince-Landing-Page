@@ -181,89 +181,6 @@
             ]
         },
         {
-            "key": "field_64d06295c0d11",
-            "label": "Tabs main",
-            "name": "tabs",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 3,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_64d06295c0d12",
-                    "label": "Title",
-                    "name": "title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_64d06295c0d13",
-                    "label": "Media Type",
-                    "name": "media_type",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "image": "Image",
-                        "video": "Video"
-                    },
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "save_other_choice": 0,
-                    "default_value": "image : Image",
-                    "layout": "vertical",
-                    "return_format": "value"
-                },
-                {
-                    "key": "field_64d06295c0d14",
-                    "label": "URL",
-                    "name": "url",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
-        },
-        {
             "key": "field_64af0ab56eec7",
             "label": "Sub Heading",
             "name": "sub_heading",
@@ -358,5 +275,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1691378333
+    "modified": 1692665848
 }

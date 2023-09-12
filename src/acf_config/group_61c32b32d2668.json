@@ -98,7 +98,7 @@
             ]
         },
         {
-            "key": "field_64d05b867f679",
+            "key": "field_64d0635736b3d",
             "label": "Tabs main",
             "name": "tabs",
             "type": "repeater",
@@ -117,7 +117,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_64d05b867f67a",
+                    "key": "field_64d0635736b3e",
                     "label": "Title",
                     "name": "title",
                     "type": "text",
@@ -136,7 +136,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_64d05b867f67b",
+                    "key": "field_64d0635736b3f",
                     "label": "Media Type",
                     "name": "media_type",
                     "type": "radio",
@@ -160,7 +160,7 @@
                     "return_format": "value"
                 },
                 {
-                    "key": "field_64d05b867f67c",
+                    "key": "field_64d0635736b40",
                     "label": "URL",
                     "name": "url",
                     "type": "text",
@@ -198,5 +198,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1691378428
+    "modified": 1691378554
 }

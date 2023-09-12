@@ -1,41 +1,45 @@
 let switchRunOnce = false;
-function initFullpage(){
-    $('#fullpage').fullpage({
-        responsiveWidth: 767,
-        autoScrolling:true,
-        scrollOverflow: true,
-        // scrollHorizontally: true,
-        afterLoad: function(origin, destination, direction, trigger){
-            if (destination == 1){
-                $(".logo").removeClass("black")
-                $(".stat1 .progress svg").addClass("animate")
-            }else if (destination == 2){
-                $(".logo").addClass("black")
-                $(".stat2 .progress svg").addClass("animate")
-            }else if (destination == 3){
-                $(".logo").addClass("black")
-                $(".stat3 .progress svg").addClass("animate")
-            }else if (destination == 4){
-                $(".logo").removeClass("black")
-                $(".stat4 .progress svg").addClass("animate")
-            }else if (destination == 5){
-                $(".logo").addClass("black")
-                $(".stat5 .progress svg").addClass("animate")
-                if(switchRunOnce == false){
-                    $(".feature").eq(0).addClass("active")
-                    let i = 1;
-                    setInterval(() => {
-                        $(".feature").removeClass("active")
-                        $(".feature").eq(i).addClass("active")
-                        i++;
-                        i = i % $(".feature").length;
-                    }, 4000);
+
+var $ = jQuery
+
+    function initFullpage(){
+        $('#fullpage').fullpage({
+            responsiveWidth: 767,
+            autoScrolling:true,
+            scrollOverflow: true,
+            // scrollHorizontally: true,
+            afterLoad: function(origin, destination, direction, trigger){
+                if (destination == 1){
+                    $(".logo").removeClass("black")
+                    $(".stat1 .progress svg").addClass("animate")
+                }else if (destination == 2){
+                    $(".logo").addClass("black")
+                    $(".stat2 .progress svg").addClass("animate")
+                }else if (destination == 3){
+                    $(".logo").addClass("black")
+                    $(".stat3 .progress svg").addClass("animate")
+                }else if (destination == 4){
+                    $(".logo").removeClass("black")
+                    $(".stat4 .progress svg").addClass("animate")
+                }else if (destination == 5){
+                    $(".logo").addClass("black")
+                    $(".stat5 .progress svg").addClass("animate")
+                    if(switchRunOnce == false){
+                        $(".feature").eq(0).addClass("active")
+                        let i = 1;
+                        setInterval(() => {
+                            $(".feature").removeClass("active")
+                            $(".feature").eq(i).addClass("active")
+                            i++;
+                            i = i % $(".feature").length;
+                        }, 4000);
+                    }
+                    switchRunOnce = true;
                 }
-                switchRunOnce = true;
             }
-        }
-    });
-}
+        });
+    }
+
 if($(window).innerWidth() <= 767){
     videoFile = [
         'https://res.cloudinary.com/dzbpsu654/video/upload/v1691193027/Optimized%20Videos/Rpreplay_Final1690857912_zcj4cx.mp4',
@@ -130,11 +134,11 @@ $(document).ready(function(){
         for (let i = 0; i < $(".media").length; i++) {
             document.getElementsByClassName('media')[i].pause();
         }
-    })
+    });
     // if($(window).innerWidth() >= 767){
-        initFullpage()
+        initFullpage();
     // }
-})
+});
 
 $(window).scroll(function(){
     if($(window).scrollTop() > 100){

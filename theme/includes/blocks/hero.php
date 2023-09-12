@@ -5,7 +5,7 @@
                 <video data-keepplaying loop muted autoplay playsinline src="<?php echo "https://res.cloudinary.com/dzbpsu654/video/upload/v1690244612/new%20videos/Jacket_3_wmuqng.mp4"?>" ></video>
             </div> -->
             <div class="mockups">
-                <img src="<?php echo $block["mockups"]?>" alt="">
+                <video data-keepplaying loop muted autoplay playsinline src="<?php echo $block["mockups"]?>" alt=""></video>
             </div>
             <!-- <div class="content">
                 <h1 class="heading"><?php echo $block["heading"]?></h1>

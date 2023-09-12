@@ -154,7 +154,7 @@
             "key": "field_64d435862505e",
             "label": "Mockup",
             "name": "mockup",
-            "type": "image",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -163,16 +163,11 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -192,5 +187,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1691628956
+    "modified": 1693247874
 }

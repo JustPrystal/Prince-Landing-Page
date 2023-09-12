@@ -269,6 +269,15 @@
                                 animation: secondStat 0.4s ease-in-out forwards;
                             }
                         }
+                        &:before{
+                            content: "";
+                            width: 50px;
+                            height: 50px;
+                            border: 4px solid #ccc;
+                            border-radius: 50%;
+                            position: absolute;
+                            inset: 0;
+                        }
                     }
                     .text{
                         font-family: "Inter";

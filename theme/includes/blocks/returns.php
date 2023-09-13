@@ -3,6 +3,7 @@
         <div class="wrap">
             <div class="content">
                 <div class="heading"><?php echo $block["heading"]?></div>
+                <div class="description"><?php echo $block["description"]?></div>
                 <div class="stat2 stat">
                     <div class="progress">
                         <div class="percentage"><?php echo $block["stat"]["percentage"]?>%</div>
@@ -21,7 +22,6 @@
                     </div>
                     <div class="text"><?php echo $block["stat"]["text"]?></div>
                 </div>
-                <div class="description"><?php echo $block["description"]?></div>
                 <div class="tab-titles">
                     <?php 
                     $i = 0;
@@ -61,9 +61,9 @@
                     <div class="text"><?php echo $block["stat"]["text"]?></div>
                 </div>
                 <div class="wrapin">
-                    <div class="options">
+                    <!-- <div class="options">
                         <img src="<?php echo $block["image_options"]?>" alt="">
-                    </div>
+                    </div> -->
                     <video data-keepplaying loop muted autoplay playsinline src="https://res.cloudinary.com/dzbpsu654/video/upload/v1690244611/new%20videos/New_Lightning_stxzxq.mp4"></video>
                 </div>
             </div>

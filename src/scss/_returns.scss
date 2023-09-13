@@ -193,7 +193,10 @@
             }
             .content{
                 padding: 60px;
-                width: 63%;
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 @media(max-width: 991px){
                     width: 58%;
                     padding: 0;
@@ -238,7 +241,7 @@
                     grid-gap: 10px;
                     display: flex;
                     align-items: center;
-                    margin-bottom: 20px;
+                    margin-bottom: 25px;
                     @media(max-width: 767px){
                         display: none;
                     }
@@ -261,6 +264,9 @@
                             top: 50%;
                             font-size: 14px;
                             font-weight: 900;
+                            margin-left: 2px;
+                            margin-top: -1px;
+                            letter-spacing: 1.4px;
                         }
                         svg{
                             stroke-dasharray:450;
@@ -283,23 +289,27 @@
                         font-family: "Inter";
                         font-size: 14px;
                         font-style: normal;
-                        font-weight: 700;
+                        text-align: left;
+                        font-weight: 800;
                         line-height: normal;
                         letter-spacing: 1.4px;
                         text-transform: uppercase;
                         padding-right: 20px;
+                        @media(max-width: 991px){
+                            padding-right: 0px;
+                        }
                     }
                 }
                 .description{
                     font-family: "Inter";
-                    color: rgba(0, 0, 0, 0.7);
-                    font-size: 18px;
+                    color: #4d4d4d;
+                    font-size: 20px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
-                    margin-bottom: 20px;
+                    margin-bottom: 50px;
                     letter-spacing: 0.2px;
-                    padding-right: 80px;
+                    padding-right: 0px;
                     @media(max-width: 991px){
                         padding-right: 0px;
                         font-size: 14px;
@@ -339,7 +349,9 @@
                         .text{
                             padding: 20px 40px;
                             z-index: 2;
-                            color: $blue;
+                            background: linear-gradient(to top, #0E74F9, #4841D2);
+                            -webkit-background-clip: text;
+                            color: transparent;
                             position: relative;
                             width: max-content;
                             font-family: "Inter";
@@ -371,12 +383,15 @@
                 }
                 .sub-heading{
                     font-family: "Inter";
-                    font-size: 20px;
+                    font-size: 25px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 700;
                     line-height: normal;
                     letter-spacing: 0.2px;
                     margin-bottom: 40px;
+                    background: linear-gradient(to top, #0E74F9, #4841D2);
+                    -webkit-background-clip: text;
+                    color: transparent;
                     @media(max-width: 991px){
                         font-size: 16px;
                     }
@@ -390,21 +405,24 @@
                     font-family: "Inter";
                     width: max-content;
                     font-size: 16px;
+                    font-weight: 600;
                     font-style: normal;
                     line-height: 1.375;
-                    letter-spacing: 0.32px;
+                    letter-spacing: 0.62px;
                     text-transform: uppercase;
                     border-radius: 50px;
-                    background-image: linear-gradient(183deg, #4841D2 0%, #0E74F9 100%);
-                    transition: 100ms ease-in-out;
-                    background-size: 300%;
-                    background-position: left;
+                    background-image: linear-gradient(186deg, #4841D2 9.97%, #0E74F9 113.54%);
+                    transition: all 100ms ease-in-out;
+                    background-size: 100%;
+                    background-position: center;
                     &:hover{
                         background-position:right;
-                        transition: 100ms ease-in-out;
+                        background-size: 300%;
+                        transition: all 100ms ease-in-out;
                     }
                     @media(max-width: 767px){
                         width: 100%;
+                        margin-bottom: 0px;
                         text-align: center;
                     }
                 }
@@ -499,6 +517,7 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
+                    justify-content: end;
                     @media(max-width: 767px){
                         justify-content: center;
                     }
@@ -506,7 +525,7 @@
                         justify-content: space-between;
                     }
                 }
-                width: 37%;
+                width: 35%;
                 @media(max-width: 991px){
                     width: 42%;
                 }
